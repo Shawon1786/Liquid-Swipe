@@ -240,6 +240,30 @@ class _MyHomeState extends State<MyHome> {
         ),
       ),
     ),
+    Container(
+      color: Color(0xffEE5A24),
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Center(
+              child: Image(
+                image: AssetImage('Images/st.jpg'),
+              ),
+            ),
+            Padding(padding: EdgeInsets.symmetric(horizontal: 30,),
+            child: Column(
+              children: [
+                Text('St. Paul Cathedral, London', style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: Color(0xff6D214F)),),
+                Text("St Paul’s Cathedral was designed by English architect Sir Christopher Wren. Sitting at the top of Ludgate Hill, the highest point in the City of London, its famous dome is one of the world’s largest, measuring nearly 112 metres high.    The original church on the site was founded in the year 604AD. Work on the present English Baroque church began in the 17th Century by Christopher Wren as part of a major rebuilding program after the Great Fire of London.     When started working on St Paul’s in 1668, his designs for the cathedral taking a decade to complete and the actual construction taking a further 40 years. St Paul’s has played an integral part of London life ever since – as a domineering element in the city’s skyline, as a centre for tourism and religious worship, and most recently as a focal point for anticapitalist protests.", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),),
+
+              ],
+            ),),
+          ],
+        ),
+      ),
+    ),
   ];
   @override
   Widget build(BuildContext context) {
